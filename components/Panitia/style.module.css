@@ -1,0 +1,78 @@
+.in {
+  @apply block relative;
+  padding: 5.2rem 0 8rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url('/img/bg_2.jpg');
+  min-height: 601px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 960px) {
+  .in {
+    padding: 3rem 0 4rem;
+  }
+}
+
+.cont {
+  @apply w-full block relative justify-center;
+  min-height: calc(601px - 5.5rem);
+}
+
+.header {
+  @apply w-full relative;
+  margin: 0 auto 3rem;
+}
+
+.title {
+  @apply text-xl block relative text-center font-light uppercase;
+  font-size: 2.6rem;
+  letter-spacing: 0.8rem;
+}
+
+.inner {
+  width: 90%;
+  @apply mx-auto;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.6rem 1.5rem;
+}
+
+.item {
+  @apply block relative;
+}
+
+.jabatan {
+  @apply block relative font-extralight;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  padding-left: 1.4rem;
+}
+
+.jabatan::before {
+  content: '';
+  width: 0.5rem;
+  height: 0.1rem;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  border-bottom: 0.1rem solid white;
+}
+
+.nama {
+  font-size: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  position: relative;
+  padding-left: 1.4rem;
+}

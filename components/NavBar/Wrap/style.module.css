@@ -1,0 +1,96 @@
+.cover {
+  @apply w-full h-full block absolute top-0 left-0 pointer-events-none;
+  z-index: 5;
+}
+
+@supports (content-visibility: auto) {
+  .cover {
+    content-visibility: auto;
+  }
+}
+
+.in,
+.out {
+  @apply h-full grid absolute top-0 left-0 invisible;
+  width: 900%;
+  backface-visibility: hidden;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.in::after {
+  @apply w-screen h-full block absolute top-0 left-0;
+  content: '';
+  background: rgba(0, 0, 0, 0.95);
+  transform: translate(100%, 0);
+}
+
+.opened .in {
+  @apply visible;
+  animation: page_change 0.5s steps(9) forwards;
+}
+
+.closing .out {
+  @apply visible;
+  animation: page_chage 0.5s steps(9) forwards;
+}
+
+.in .img {
+  @apply h-full block relative top-0 left-0;
+  transform: scale(-1, -1);
+}
+
+.out .img {
+  @apply h-full block relative top-0 left-0;
+}
+
+.block_1 {
+  background: url('/img/bg_block01_bk.png') repeat left top/min(150%, 2000px)
+    auto;
+}
+
+.block_2 {
+  background: url('/img/bg_block02_bk.png') repeat left top/min(150%, 2000px)
+    auto;
+}
+
+.block_3 {
+  background: url('/img/bg_block03_bk.png') repeat left top/min(150%, 2000px)
+    auto;
+}
+
+.block_4 {
+  background: url('/img/bg_block04_bk.png') repeat left top/min(150%, 2000px)
+    auto;
+}
+
+.block_5 {
+  background: url('/img/bg_block05_bk.png') repeat left top/min(150%, 2000px)
+    auto;
+}
+
+.block_6 {
+  background: url('/img/bg_block06_bk.png') repeat left top/min(150%, 2000px)
+    auto;
+}
+
+.block_7 {
+  background: url('/img/bg_block07_bk.png') repeat left top/min(150%, 2000px)
+    auto;
+}
+
+.bg {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+/* ******************************* */
+
+@keyframes page_change {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

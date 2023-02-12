@@ -1,0 +1,256 @@
+.header {
+  @apply w-full block fixed top-0 left-0 z-10 bg-black;
+}
+
+.cont {
+  @apply w-full grid place-items-center relative my-0 mx-auto;
+  height: 5.5rem;
+}
+
+/* ******************************* */
+
+.kelompok {
+  width: 20rem;
+  left: 3rem;
+  @apply absolute text-base;
+}
+
+@media screen and (max-width: 960px) {
+  .kelompok {
+    @apply hidden;
+  }
+}
+
+/* ******************************* */
+
+.heading {
+  width: 32.6rem;
+  @apply max-w-fit block absolute text-center;
+}
+
+.nama {
+  @apply text-xl bg-black m-0 p-0 pb-2 block;
+  letter-spacing: 0.45rem;
+  font-size: 1.9rem;
+}
+
+.sub {
+  @apply text-xs m-0 p-0 block;
+  font-size: 0.65rem;
+}
+
+@media screen and (max-width: 960px) {
+  .nama {
+    @apply text-lg pb-1;
+    letter-spacing: 0.1rem;
+    font-size: 1.25rem;
+  }
+
+  .sub {
+    font-size: 0.5rem;
+  }
+}
+
+/* ******************************* */
+
+.menu {
+  contents: '';
+  width: 4rem;
+  height: 4rem;
+  top: 2rem;
+  right: 3rem;
+  @apply block fixed z-20;
+}
+
+@media screen and (min-width: 961px) {
+  .menu {
+    /* opacity: 0; */
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 0.4s cubic-bezier(0.5, 1, 0.89, 1);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .menu {
+    width: 3rem;
+    height: 3rem;
+    top: 2rem;
+    right: 0rem;
+  }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1280px) {
+  .menu {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.inner {
+  width: 3.35rem;
+  height: 0.875rem;
+  @apply absolute cursor-pointer;
+}
+
+@media screen and (max-width: 960px) {
+  .inner {
+    width: 2rem;
+    height: 0.6rem;
+  }
+}
+
+.in {
+  @apply w-full h-full block relative top-0;
+}
+
+/* ******************************* */
+
+.open {
+  @apply w-full h-full block absolute top-0 left-0;
+}
+
+.open::after {
+  content: '';
+  width: 200%;
+  height: 300%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.open .item {
+  height: 0.135rem;
+  backface-visibility: hidden;
+  @apply w-full block absolute left-0;
+  transition: opacity 0s linear 0.3s, top 0.2s cubic-bezier(0.5, 1, 0.89, 1),
+    bottom 0.2s cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@media screen and (max-width: 960px) {
+  .open .item {
+    height: 0.09rem;
+  }
+}
+
+.opened .open .item {
+  animation: flash 0.08s steps(1) 3;
+}
+
+.opened .open .item:nth-child(1) {
+  @apply opacity-0;
+  transition-delay: 0s;
+}
+
+.opened .open .item:nth-child(2) {
+  @apply opacity-0;
+  transition-delay: 0.15s;
+}
+
+.opened .open .item:nth-child(3) {
+  @apply opacity-0;
+  transition-delay: 0.3s;
+}
+
+.open .item.one {
+  @apply top-0;
+}
+
+.open .item.two {
+  @apply top-1/2;
+}
+
+@media screen and (max-width: 960px) {
+  .open .item.two {
+    display: none;
+  }
+}
+
+.open .item.three {
+  @apply top-full;
+}
+
+.inner:hover .open .item.one {
+  top: -0.35rem;
+}
+
+.inner:hover .open .item.three {
+  top: calc(100% + 0.35rem);
+}
+
+.open .deco {
+  @apply w-full h-full block absolute top-0 left-0 bg-white;
+}
+
+/* ******************************* */
+
+.close {
+  @apply w-full h-full block absolute top-0 left-0;
+}
+
+.close::after {
+  content: '';
+  width: 200%;
+  height: 300%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close .item {
+  height: 0.135rem;
+  backface-visibility: hidden;
+  @apply w-full block absolute left-0 opacity-0;
+  transition: opacity 0s linear, transform 0.2s cubic-bezier(0.5, 1, 0.89, 1);
+  animation: flash 0.08s steps(1) 3;
+}
+
+@media screen and (max-width: 960px) {
+  .close .item {
+    height: 0.09rem;
+  }
+}
+
+.opened .close .item {
+  transition: opacity 0s linear 0.3s,
+    transform 0.2s cubic-bezier(0.5, 1, 0.89, 1);
+  @apply opacity-100 animate-none;
+}
+
+.close .item.one,
+.close .item.two {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.inner:hover .close .item.one {
+  transform: translate(0, calc(-50% + -0.35rem));
+}
+
+.inner:hover .close .item.two {
+  transform: translate(0, calc(-50% + 0.35rem));
+}
+
+.close .deco {
+  @apply w-full h-full block absolute top-0 left-0 bg-white;
+}
+
+/* ******************************* */
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

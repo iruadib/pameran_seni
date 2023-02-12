@@ -1,0 +1,165 @@
+.nav {
+  @apply opacity-0 hidden w-full fixed left-0 z-30 bg-black;
+  /* height: calc(601px - 5.5rem); */
+  height: 601px;
+  top: 5.5rem;
+  transition: opacity 0.2s cubic-bezier(0.5, 1, 0.89, 1) 0.4s;
+}
+
+.nav.show {
+  @apply block;
+}
+
+.nav.opened {
+  @apply pointer-events-auto opacity-100;
+  transition: opacity 0.2s cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+/* ******************************* */
+
+/* .bg {
+  content: '';
+  @apply w-full h-full block absolute top-0 left-0 invisible bg-black opacity-0;
+  transition: opacity 0.2s cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+.show .bg {
+  visibility: visible;
+}
+
+.opened .bg {
+  @apply opacity-100;
+  transition: opacity 0.2s cubic-bezier(0.5, 1, 0.89, 1) 0.7s;
+} */
+
+/* ******************************* */
+
+.cont {
+  @apply flex items-center justify-center relative my-0 mx-auto;
+  width: 80%;
+  max-width: 1100px;
+  min-height: calc(601px - 5.5rem);
+  padding: 4rem 0 1.2rem;
+}
+
+.inner {
+  @apply w-full relative;
+}
+
+.list {
+  @apply block relative opacity-0;
+  transition: opacity 0s linear;
+}
+
+.opened .list {
+  @apply opacity-100;
+  animation: flash 0.1s steps(1) 1;
+}
+
+@media screen and (min-width: 961px) {
+  .list {
+    @apply grid relative;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 5rem 4rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .item + .item {
+    margin-top: 2rem;
+  }
+}
+
+.item {
+  @apply block relative opacity-0;
+  opacity: 1;
+  transition: opacity 0s linear;
+}
+
+.opened .item:nth-child(1) {
+  transition-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.opened .item:nth-child(2) {
+  transition-delay: 0.35s;
+  animation-delay: 0.35s;
+}
+
+.opened .item:nth-child(3) {
+  transition-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.link {
+  @apply max-w-fit block relative;
+}
+
+.icon {
+  width: 0.65rem;
+  height: 1.45rem;
+  transform: translate(0, -50%);
+  place-items: center;
+  @apply grid absolute top-1/2 left-0 opacity-0;
+}
+
+.svg {
+  @apply w-full h-auto relative;
+}
+
+.arrow {
+  fill: white;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .icon {
+    transition: opacity 0.2s cubic-bezier(0.5, 1, 0.89, 1);
+  }
+
+  .link:hover .icon {
+    @apply opacity-100;
+  }
+
+  .link:hover .arrow {
+    animation: flash 0.1s steps(1) 2;
+  }
+}
+
+.text {
+  font-size: 1.8rem;
+  letter-spacing: 0.5rem;
+  @apply block relative uppercase;
+}
+
+@media screen and (max-width: 960px) {
+  .text {
+    font-size: 1.7rem;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .link:hover .text {
+    transform: translateX(2rem);
+  }
+
+  .text {
+    transition: transform 0.2s cubic-bezier(0.5, 1, 0.89, 1);
+  }
+}
+
+/* ******************************* */
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
