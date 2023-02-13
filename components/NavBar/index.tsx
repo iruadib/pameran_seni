@@ -17,10 +17,10 @@ export const NavBar = () => {
     <>
       <header className={styles.header}>
         <div className={styles.cont}>
-          <div className={styles.kelompok}>Kelompok Dua</div>
+          <div className={styles.kelompok}>Kelompok Lima</div>
           <div className={styles.heading}>
             <h1 className={styles.nama}>The Melankolis</h1>
-            <sub className={styles.sub}>Melankolis ・ Kelompok Dua</sub>
+            <sub className={styles.sub}>Melankolis ・ Kelompok Lima</sub>
           </div>
           <div className={styles.menu}>
             <div
