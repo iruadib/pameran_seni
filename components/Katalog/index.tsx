@@ -15,16 +15,6 @@ export const Katalog = () => {
                     <div className={styles.cursor}>
                       <div className={styles.deco}></div>
                     </div>
-                    <div className={styles.blur_cont}>
-                      <img
-                        src={item.img}
-                        alt={item.name}
-                        loading="lazy"
-                        width="500"
-                        height="500"
-                        className={styles.blur_bg}
-                      />
-                    </div>
                     <div className={styles.thumb}>
                       <img
                         src={item.img}
