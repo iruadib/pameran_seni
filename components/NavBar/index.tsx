@@ -13,13 +13,16 @@ export const NavBar = () => {
   const handleClick = () => {
     setOpen((prev) => !prev)
   }
+  const handleLinkClick = () => {
+    setOpen(false)
+  }
   return (
     <>
       <header className={styles.header}>
         <div className={styles.cont}>
           <div className={styles.kelompok}>Kelompok Lima</div>
           <div className={styles.heading}>
-            <h1 className={styles.nama}>The Melankolis</h1>
+            <h1 className={styles.nama}>The Melankolia</h1>
             <sub className={styles.sub}>Melankolis ・ Kelompok Lima</sub>
           </div>
           <div className={styles.menu}>
@@ -53,7 +56,7 @@ export const NavBar = () => {
         </div>
       </header>
       <Wrap open={open} />
-      <Nav open={open} />
+      <Nav open={open} handleClick={handleLinkClick} />
     </>
   )
 }

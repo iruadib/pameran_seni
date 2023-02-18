@@ -11,6 +11,7 @@ export default function Home() {
         src="/img/placeholder_bg.jpg"
         alt="Placeholder"
         className={styles.img}
+        loading="lazy"
       />
     </>
   )

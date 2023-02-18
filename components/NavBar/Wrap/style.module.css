@@ -1,5 +1,5 @@
 .cover {
-  @apply w-full h-full block absolute top-0 left-0 pointer-events-none;
+  @apply w-full h-full block fixed top-0 left-0 pointer-events-none;
   z-index: 5;
 }
 
@@ -32,7 +32,7 @@
 
 .closing .out {
   @apply visible;
-  animation: page_chage 0.5s steps(9) forwards;
+  animation: page_change 0.5s steps(9) forwards;
 }
 
 .in .img {
@@ -81,6 +81,12 @@
 
 .bg {
   background: rgba(0, 0, 0, 0.95);
+}
+
+@media screen and (orientation: portrait) {
+  .img {
+    background-size: min(200%, 2000px) !important;
+  }
 }
 
 /* ******************************* */

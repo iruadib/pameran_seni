@@ -9,10 +9,10 @@ export const Wrap = ({ open }: Props) => {
   const [closing, setClosing] = useState(false)
   useEffect(() => {
     if (!open) {
-      setClosing(!open)
+      setClosing(true)
       setTimeout(() => {
-        setClosing(open)
-      }, 300)
+        setClosing(false)
+      }, 500)
     }
   }, [open])
   return (

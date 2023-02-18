@@ -1,8 +1,7 @@
 .nav {
-  @apply opacity-0 hidden w-full fixed left-0 z-30 bg-black;
-  /* height: calc(601px - 5.5rem); */
-  height: 601px;
-  top: 5.5rem;
+  @apply opacity-0 hidden w-full fixed left-0 z-30;
+  height: calc(100vh - var(--headerH));
+  top: var(--headerH);
   transition: opacity 0.2s cubic-bezier(0.5, 1, 0.89, 1) 0.4s;
 }
 
@@ -11,7 +10,7 @@
 }
 
 .nav.opened {
-  @apply pointer-events-auto opacity-100;
+  @apply pointer-events-auto opacity-100 bg-black;
   transition: opacity 0.2s cubic-bezier(0.5, 1, 0.89, 1);
 }
 

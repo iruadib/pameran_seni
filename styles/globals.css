@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --winH: 100vh;
+  --headerH: 5.5rem;
+  --color-gray: #33322e;
+}
+
+@media screen and (max-width: 960px) {
+  :root {
+    --headerH: 4.5rem;
+  }
+}
+
 body {
   font-family: 'Noto Serif JP', '游明朝', 'YuMincho', 'ヒラギノ明朝 ProN W3',
     'Hiragino Mincho ProN', 'HG明朝E', 'ＭＳ 明朝', 'ＭＳ Ｐ明朝',
@@ -16,5 +28,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.3;
   letter-spacing: 0.1rem;
+  min-height: 100vh;
   overflow-x: hidden;
 }
