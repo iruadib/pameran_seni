@@ -1,64 +1,173 @@
+import { useEffect, useState } from 'react'
 import { ContBg } from '../ContBg'
-import { katalogList } from './katalogList'
+import { motion, AnimatePresence } from 'framer-motion'
+import { katalogList, KatalogProps } from './katalogList'
 import styles from './style.module.css'
 
 export const Katalog = () => {
+  const [selected, setSelected] = useState<null | string>(null)
+  const [item, setItem] = useState<null | KatalogProps>(null)
+
+  useEffect(() => {
+    const close = (e: KeyboardEvent) => {
+      if (e.key === 'Esc' || e.key === 'Escape') {
+        setSelected(null)
+        setItem(null)
+      }
+    }
+    if (selected) {
+      document.querySelector('body')?.classList.add('scroll-hide')
+      window.addEventListener('keydown', close)
+    }
+    return () => {
+      document.querySelector('body')?.classList.remove('scroll-hide')
+      window.removeEventListener('keydown', close)
+    }
+  }, [selected])
+
+  const handleClose = () => {
+    setItem(null)
+    setSelected(null)
+  }
   return (
     <>
       <ContBg title="Katalog">
         <div className={`${styles.cont} ${styles.entered}`}>
           <ul className={styles.list}>
             {katalogList.map((item) => (
-              <>
-                <li className={styles.item}>
-                  <button className={styles.card}>
-                    <div className={styles.cursor}>
-                      <div className={styles.deco}></div>
-                    </div>
-                    <div className={styles.thumb}>
+              <motion.li
+                layoutId={item.name}
+                className={styles.item}
+                key={item.name}
+              >
+                <motion.button
+                  className={styles.card}
+                  onClick={() => {
+                    setSelected(item.name)
+                    setItem(item)
+                  }}
+                >
+                  <motion.div className={styles.cursor}>
+                    <motion.div className={styles.deco}></motion.div>
+                  </motion.div>
+                  <motion.div className={styles.thumb}>
+                    <img
+                      src={item.img}
+                      alt={item.name}
+                      loading="lazy"
+                      width="500"
+                      height="500"
+                      className={styles.img}
+                    />
+                  </motion.div>
+                  <motion.div className={styles.name}>
+                    <motion.div className={styles.icon}>
+                      <svg
+                        className={styles.svg}
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 13.3 25.6"
+                      >
+                        <polygon
+                          className={styles.arrow}
+                          points="13.3,12.8 13.3,12.8 13.3,12.8 2.9,25.6 1.9,24.5 11.3,12.8 1.9,1.1 2.9,0 13.3,12.8 13.3,12.8	13.3,12.8 "
+                        ></polygon>
+                        <polygon
+                          className={styles.dot}
+                          points="3.1,9.4 6.3,12.8 3.1,16.2 0,12.8 "
+                        ></polygon>
+                      </svg>
+                    </motion.div>
+                    <motion.div className={styles.text}>{item.name}</motion.div>
+                  </motion.div>
+                </motion.button>
+              </motion.li>
+            ))}
+          </ul>
+          <AnimatePresence>
+            {selected && item && (
+              <motion.div layoutId={selected} className={styles.modal}>
+                <motion.div className={styles.modal_detail}>
+                  <motion.div className={styles.modal_header}>
+                    <motion.div className={styles.modal_visual}>
                       <img
                         src={item.img}
                         alt={item.name}
-                        loading="lazy"
-                        width="500"
-                        height="500"
-                        className={styles.img}
+                        className={styles.modal_img}
                       />
-                    </div>
-                    <div className={styles.name}>
-                      <div className={styles.icon}>
-                        <svg
-                          className={styles.svg}
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 13.3 25.6"
-                        >
-                          <polygon
-                            className={styles.arrow}
-                            points="13.3,12.8 13.3,12.8 13.3,12.8 2.9,25.6 1.9,24.5 11.3,12.8 1.9,1.1 2.9,0 13.3,12.8 13.3,12.8	13.3,12.8 "
-                          ></polygon>
-                          <polygon
-                            className={styles.dot}
-                            points="3.1,9.4 6.3,12.8 3.1,16.2 0,12.8 "
-                          ></polygon>
-                        </svg>
-                      </div>
-                      <div className={styles.text}>{item.name}</div>
-                    </div>
-                  </button>
-                </li>
-              </>
-            ))}
-          </ul>
+                    </motion.div>
+                  </motion.div>
+                  <motion.div className={styles.modal_info}>
+                    <motion.div className={styles.info_header}>
+                      <motion.div className={styles.info_name}>
+                        {item.name}
+                      </motion.div>
+                      <motion.div
+                        className={styles.info_maker}
+                        data-prefix="By "
+                      >
+                        {item.pembuat}
+                      </motion.div>
+                    </motion.div>
+                    <motion.div className={styles.info_catalog}>
+                      <motion.div className={styles.catalog}>
+                        <motion.div className={styles.catalog_header}>
+                          DATA
+                        </motion.div>
+                        <motion.div className={styles.catalog_inner}>
+                          <motion.div className={styles.catalog_data}>
+                            <motion.div className={styles.data_cap}>
+                              Type
+                            </motion.div>
+                            <motion.div className={styles.data_text}>
+                              {item.type}
+                            </motion.div>
+                          </motion.div>
+                          <motion.div className={styles.catalog_data}>
+                            <motion.div className={styles.data_cap}>
+                              Tanggal Pembuatan
+                            </motion.div>
+                            <motion.div className={styles.data_text}>
+                              {item.tanggal}
+                            </motion.div>
+                          </motion.div>
+                          <motion.div className={styles.catalog_data}>
+                            <motion.div className={styles.data_cap}>
+                              Panjang
+                            </motion.div>
+                            <motion.div className={styles.data_text}>
+                              {item.panjang}
+                            </motion.div>
+                          </motion.div>
+                          <motion.div className={styles.catalog_data}>
+                            <motion.div className={styles.data_cap}>
+                              Lebar
+                            </motion.div>
+                            <motion.div className={styles.data_text}>
+                              {item.lebar}
+                            </motion.div>
+                          </motion.div>
+                          {item.type === '3D' && (
+                            <motion.div className={styles.catalog_data}>
+                              <motion.div className={styles.data_cap}>
+                                Tinggi
+                              </motion.div>
+                              <motion.div className={styles.data_text}>
+                                {item.tinggi}
+                              </motion.div>
+                            </motion.div>
+                          )}
+                        </motion.div>
+                      </motion.div>
+                    </motion.div>
+                  </motion.div>
+                </motion.div>
+                {/* <motion.h5>{item.name}</motion.h5>
+                <motion.h2>{item.img}</motion.h2>
+                <motion.button onClick={handleClose} /> */}
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
-        {/* <div className={styles.card}>
-          <img
-            src="/img/pranko_card.jpeg"
-            alt="Old Memories"
-            className={styles.img}
-            loading="lazy"
-          />
-          <p>Prangko</p>
-        </div> */}
       </ContBg>
     </>
   )

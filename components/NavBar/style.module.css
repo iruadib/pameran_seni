@@ -1,5 +1,5 @@
 .header {
-  @apply w-full block fixed top-0 left-0 z-10 bg-black;
+  @apply w-full block fixed top-0 left-0 z-20 bg-black;
 }
 
 .cont {

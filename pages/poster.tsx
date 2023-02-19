@@ -5,7 +5,7 @@ export default function PosterPage() {
   return (
     <>
       <Head>
-        <title>Halaman Poster | The Melankolis</title>
+        <title>Halaman Poster | The Melankolia</title>
       </Head>
       <Poster />
     </>

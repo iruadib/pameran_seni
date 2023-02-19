@@ -5,7 +5,7 @@ export default function KatalogPage() {
   return (
     <>
       <Head>
-        <title>Halaman Katalog | The Melankolis</title>
+        <title>Halaman Katalog | The Melankolia</title>
       </Head>
       <Katalog />
     </>

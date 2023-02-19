@@ -38,35 +38,33 @@ export const Nav = ({ open, handleClick }: Props) => {
         <div className={styles.inner}>
           <ul className={styles.list}>
             {routeList.map((route) => (
-              <>
-                <li className={styles.item}>
-                  <Link
-                    href={route.link}
-                    className={styles.link}
-                    onClick={handleClick}
-                  >
-                    <div className={styles.icon}>
-                      <svg
-                        className={styles.svg}
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 13.3 25.6"
-                      >
-                        <polygon
-                          className={styles.arrow}
-                          fill="#fff"
-                          points="13.3,12.8 13.3,12.8 13.3,12.8 2.9,25.6 1.9,24.5 11.3,12.8 1.9,1.1 2.9,0 13.3,12.8 13.3,12.8	13.3,12.8 "
-                        ></polygon>
-                        <polygon
-                          className={styles.dot}
-                          fill="#fff"
-                          points="3.1,9.4 6.3,12.8 3.1,16.2 0,12.8 "
-                        ></polygon>
-                      </svg>
-                    </div>
-                    <div className={styles.text}>{route.name}</div>
-                  </Link>
-                </li>
-              </>
+              <li className={styles.item} key={route.name}>
+                <Link
+                  href={route.link}
+                  className={styles.link}
+                  onClick={handleClick}
+                >
+                  <div className={styles.icon}>
+                    <svg
+                      className={styles.svg}
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 13.3 25.6"
+                    >
+                      <polygon
+                        className={styles.arrow}
+                        fill="#fff"
+                        points="13.3,12.8 13.3,12.8 13.3,12.8 2.9,25.6 1.9,24.5 11.3,12.8 1.9,1.1 2.9,0 13.3,12.8 13.3,12.8	13.3,12.8 "
+                      ></polygon>
+                      <polygon
+                        className={styles.dot}
+                        fill="#fff"
+                        points="3.1,9.4 6.3,12.8 3.1,16.2 0,12.8 "
+                      ></polygon>
+                    </svg>
+                  </div>
+                  <div className={styles.text}>{route.name}</div>
+                </Link>
+              </li>
             ))}
           </ul>
         </div>

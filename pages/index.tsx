@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Halaman Rumah | The Melankolis</title>
+        <title>Halaman Rumah | The Melankolia</title>
       </Head>
       <img
         src="/img/placeholder_bg.jpg"
