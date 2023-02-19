@@ -10,6 +10,12 @@
 
 @media screen and (max-width: 960px) {
   :root {
+    --headerH: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 751px) {
+  :root {
     --headerH: 4.5rem;
   }
 }
