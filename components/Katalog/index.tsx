@@ -33,12 +33,8 @@ export const Katalog = () => {
     <>
       <ContBg title="Katalog">
         <div className={`${styles.cont} ${styles.entered}`}>
-          <div className={styles.main}>
-            <motion.div
-              layoutId={mainKatalog.name}
-              className={styles.item}
-              key={mainKatalog.name}
-            >
+          <motion.div className={styles.main} layoutId={mainKatalog.name}>
+            <motion.div className={styles.item}>
               <motion.button
                 className={styles.card}
                 onClick={() => {
@@ -82,7 +78,7 @@ export const Katalog = () => {
                 </motion.div>
               </motion.button>
             </motion.div>
-          </div>
+          </motion.div>
           <ul className={styles.list}>
             {katalogList.map((item) => (
               <motion.li
