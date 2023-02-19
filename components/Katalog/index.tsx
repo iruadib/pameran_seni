@@ -159,11 +159,30 @@ export const Katalog = () => {
                         </motion.div>
                       </motion.div>
                     </motion.div>
+                    <motion.button
+                      onClick={handleClose}
+                      className={styles.modal_btn}
+                    >
+                      <motion.div className={styles.btn_text}>Close</motion.div>
+                      <motion.div className={styles.btn_icon}>
+                        <svg
+                          className={styles.btn_svg}
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 13.3 25.6"
+                        >
+                          <polygon
+                            className={styles.btn_arrow}
+                            points="13.3,12.8 13.3,12.8 13.3,12.8 2.9,25.6 1.9,24.5 11.3,12.8 1.9,1.1 2.9,0 13.3,12.8 13.3,12.8	13.3,12.8 "
+                          ></polygon>
+                          <polygon
+                            className={styles.btn_dot}
+                            points="3.1,9.4 6.3,12.8 3.1,16.2 0,12.8 "
+                          ></polygon>
+                        </svg>
+                      </motion.div>
+                    </motion.button>
                   </motion.div>
                 </motion.div>
-                {/* <motion.h5>{item.name}</motion.h5>
-                <motion.h2>{item.img}</motion.h2>
-                <motion.button onClick={handleClose} /> */}
               </motion.div>
             )}
           </AnimatePresence>
