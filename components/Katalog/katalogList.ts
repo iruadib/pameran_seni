@@ -20,10 +20,10 @@ export const katalogList: KatalogProps[] = [
     lebar: '50cm'
   },
   {
-    name: '2B',
-    img: '/img/twob.jpg',
+    name: 'Lawliet',
+    img: '/img/lawlietjpg.jpg',
     type: '2D',
-    pembuat: 'Hayolo',
+    pembuat: 'Hihihi',
     tanggal: '12-01-2023',
     panjang: '50cm',
     lebar: '30cm'
@@ -39,8 +39,8 @@ export const katalogList: KatalogProps[] = [
     tinggi: '50cm'
   },
   {
-    name: '2Bi',
-    img: '/img/twob.jpg',
+    name: 'Levi',
+    img: '/img/levi.webp',
     type: '2D',
     pembuat: 'Hayolo',
     tanggal: '12-01-2023',
