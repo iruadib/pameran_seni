@@ -508,7 +508,6 @@
   padding: 0.4rem 1rem;
   font-size: 1.1rem;
   letter-spacing: 0.4rem;
-  text-align: center;
   color: #000;
   background: #fff;
   @apply align-middle flex justify-center items-center;

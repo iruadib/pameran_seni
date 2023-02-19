@@ -116,7 +116,7 @@ export const Katalog = () => {
                         <motion.div className={styles.catalog_inner}>
                           <motion.div className={styles.catalog_data}>
                             <motion.div className={styles.data_cap}>
-                              Type
+                              Tipe
                             </motion.div>
                             <motion.div className={styles.data_text}>
                               {item.type}
