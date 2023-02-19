@@ -2,6 +2,24 @@
   @apply w-full relative mx-auto;
 }
 
+.main {
+  @apply block relative mx-auto mb-5;
+  background: rgba(0, 0, 0, 0.7);
+  width: 70%;
+}
+
+@media screen and (max-width: 960px) {
+  .main {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 751px) {
+  .main {
+    width: 80%;
+  }
+}
+
 .list {
   @apply grid;
   grid-template-columns: repeat(4, 1fr);
@@ -23,7 +41,7 @@
 
 .item {
   @apply block relative outline-none;
-  aspect-ratio: 1;
+  /* aspect-ratio: 1; */
 }
 
 .card {
@@ -211,7 +229,7 @@
 }
 
 .img {
-  @apply max-w-full h-auto block align-middle select-none;
+  @apply max-w-full h-auto block align-middle select-none mx-auto;
   aspect-ratio: 1;
   object-fit: cover;
 }

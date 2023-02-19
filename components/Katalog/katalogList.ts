@@ -9,6 +9,17 @@ export interface KatalogProps {
   tinggi?: string
 }
 
+export const mainKatalog: KatalogProps = {
+  name: 'Spooky House (Karya Utama)',
+  img: '/img/Gojou.webp',
+  type: '3D',
+  pembuat: 'Kelompok Lima',
+  tanggal: '27-2-2023',
+  panjang: '30cm',
+  lebar: '50cm',
+  tinggi: '50cm'
+}
+
 export const katalogList: KatalogProps[] = [
   {
     name: 'Gojo Satoru',

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { ContBg } from '../ContBg'
 import { motion, AnimatePresence } from 'framer-motion'
-import { katalogList, KatalogProps } from './katalogList'
+import { katalogList, KatalogProps, mainKatalog } from './katalogList'
 import styles from './style.module.css'
 
 export const Katalog = () => {
@@ -33,6 +33,56 @@ export const Katalog = () => {
     <>
       <ContBg title="Katalog">
         <div className={`${styles.cont} ${styles.entered}`}>
+          <div className={styles.main}>
+            <motion.div
+              layoutId={mainKatalog.name}
+              className={styles.item}
+              key={mainKatalog.name}
+            >
+              <motion.button
+                className={styles.card}
+                onClick={() => {
+                  setSelected(mainKatalog.name)
+                  setItem(mainKatalog)
+                }}
+              >
+                <motion.div className={styles.cursor}>
+                  <motion.div className={styles.deco}></motion.div>
+                </motion.div>
+                <motion.div className={styles.thumb}>
+                  <img
+                    src={mainKatalog.img}
+                    alt={mainKatalog.name}
+                    loading="lazy"
+                    width="500"
+                    height="500"
+                    className={styles.img}
+                  />
+                </motion.div>
+                <motion.div className={styles.name}>
+                  <motion.div className={styles.icon}>
+                    <svg
+                      className={styles.svg}
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 13.3 25.6"
+                    >
+                      <polygon
+                        className={styles.arrow}
+                        points="13.3,12.8 13.3,12.8 13.3,12.8 2.9,25.6 1.9,24.5 11.3,12.8 1.9,1.1 2.9,0 13.3,12.8 13.3,12.8	13.3,12.8 "
+                      ></polygon>
+                      <polygon
+                        className={styles.dot}
+                        points="3.1,9.4 6.3,12.8 3.1,16.2 0,12.8 "
+                      ></polygon>
+                    </svg>
+                  </motion.div>
+                  <motion.div className={styles.text}>
+                    {mainKatalog.name}
+                  </motion.div>
+                </motion.div>
+              </motion.button>
+            </motion.div>
+          </div>
           <ul className={styles.list}>
             {katalogList.map((item) => (
               <motion.li
@@ -163,7 +213,7 @@ export const Katalog = () => {
                       onClick={handleClose}
                       className={styles.modal_btn}
                     >
-                      <motion.div className={styles.btn_text}>Close</motion.div>
+                      <motion.div className={styles.btn_text}>Tutup</motion.div>
                       <motion.div className={styles.btn_icon}>
                         <svg
                           className={styles.btn_svg}
