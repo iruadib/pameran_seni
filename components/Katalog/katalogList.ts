@@ -14,48 +14,58 @@ export const mainKatalog: KatalogProps = {
   img: '/img/Gojou.webp',
   type: '3D',
   pembuat: 'Kelompok Lima',
-  tanggal: '27-2-2023',
-  panjang: '30cm',
-  lebar: '50cm',
-  tinggi: '50cm'
+  tanggal: '??',
+  panjang: '??',
+  lebar: '??',
+  tinggi: '??'
 }
 
 export const katalogList: KatalogProps[] = [
   {
-    name: 'Gojo Satoru',
-    img: '/img/Gojou.webp',
+    name: 'An Eye',
+    img: '/img/visuals/An_eye.jpeg',
     type: '2D',
-    pembuat: 'Mengiru',
-    tanggal: '01-1-2022',
-    panjang: '30cm',
-    lebar: '50cm'
+    pembuat: 'Zahira Maulidina',
+    tanggal: '??',
+    panjang: '??',
+    lebar: '??'
   },
   {
-    name: 'Lawliet',
-    img: '/img/lawlietjpg.jpg',
+    name: 'Lazy Girl',
+    img: '/img/visuals/Lazy_girl.jpeg',
     type: '2D',
-    pembuat: 'Hihihi',
-    tanggal: '12-01-2023',
-    panjang: '50cm',
-    lebar: '30cm'
+    pembuat: 'Diva Edenia',
+    tanggal: '??',
+    panjang: '??',
+    lebar: '??'
+  },
+  {
+    name: 'Smiley Face',
+    img: '/img/visuals/Smiley_face.jpeg',
+    type: '3D',
+    pembuat: 'Windari Brilliani',
+    tanggal: '??',
+    panjang: '??',
+    lebar: '??',
+    tinggi: '??'
+  },
+  {
+    name: 'Staryy Night',
+    img: '/img/visuals/Starry_night.jpeg',
+    type: '2D',
+    pembuat: 'Zahira Maulidina',
+    tanggal: '??',
+    panjang: '??',
+    lebar: '??'
   },
   {
     name: 'Old Memories',
     img: '/img/pranko_card.jpeg',
     type: '3D',
     pembuat: 'Nayla Atha',
-    tanggal: '29-03-2022',
-    panjang: '100cm',
-    lebar: '10cm',
-    tinggi: '50cm'
-  },
-  {
-    name: 'Levi',
-    img: '/img/levi.webp',
-    type: '2D',
-    pembuat: 'Hayolo',
-    tanggal: '12-01-2023',
-    panjang: '50cm',
-    lebar: '30cm'
+    tanggal: '??',
+    panjang: '??',
+    lebar: '??',
+    tinggi: '??'
   }
 ]
