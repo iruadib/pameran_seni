@@ -26,7 +26,7 @@ export const katalogList: KatalogProps[] = [
     img: '/img/visuals/Melankolia_Art.jpeg',
     type: '2D',
     pembuat: 'Kelompok Lima',
-    tanggal: '??',
+    tanggal: '12 Januari 2023',
     panjang: '60cm',
     lebar: '40cm'
   },
@@ -45,8 +45,8 @@ export const katalogList: KatalogProps[] = [
     type: '2D',
     pembuat: 'Zahira Maulidina',
     tanggal: '??',
-    panjang: '??',
-    lebar: '??'
+    panjang: '21cm',
+    lebar: '14.8cm'
   },
   {
     name: 'Lazy Girl',
@@ -62,10 +62,10 @@ export const katalogList: KatalogProps[] = [
     img: '/img/visuals/Smiley_face.jpeg',
     type: '3D',
     pembuat: 'Windari Brilliani',
-    tanggal: '??',
-    panjang: '??',
-    lebar: '??',
-    tinggi: '??'
+    tanggal: '10 Mei 2022',
+    panjang: '28cm',
+    lebar: '22cm',
+    tinggi: '14cm'
   },
   {
     name: 'Staryy Night',
