@@ -22,6 +22,24 @@ export const mainKatalog: KatalogProps = {
 
 export const katalogList: KatalogProps[] = [
   {
+    name: 'Melankolia Art',
+    img: '/img/visuals/Melankolia_Art.jpeg',
+    type: '2D',
+    pembuat: 'Kelompok Lima',
+    tanggal: '??',
+    panjang: '60cm',
+    lebar: '40cm'
+  },
+  {
+    name: 'Demon Girl',
+    img: '/img/visuals/Demon_girl.jpeg',
+    type: '2D',
+    pembuat: 'Diva Edenia',
+    tanggal: '24 Agustus 2023',
+    panjang: '42cm',
+    lebar: '29.7cm'
+  },
+  {
     name: 'An Eye',
     img: '/img/visuals/An_eye.jpeg',
     type: '2D',
@@ -32,12 +50,12 @@ export const katalogList: KatalogProps[] = [
   },
   {
     name: 'Lazy Girl',
-    img: '/img/visuals/Lazy_girl.jpeg',
+    img: '/img/visuals/Lazy_girl (2).jpeg',
     type: '2D',
     pembuat: 'Diva Edenia',
-    tanggal: '??',
-    panjang: '??',
-    lebar: '??'
+    tanggal: '18 Februari 2023',
+    panjang: '29.7cm',
+    lebar: '21cm'
   },
   {
     name: 'Smiley Face',
@@ -59,13 +77,12 @@ export const katalogList: KatalogProps[] = [
     lebar: '??'
   },
   {
-    name: 'Old Memories',
-    img: '/img/pranko_card.jpeg',
-    type: '3D',
-    pembuat: 'Nayla Atha',
-    tanggal: '??',
-    panjang: '??',
-    lebar: '??',
-    tinggi: '??'
+    name: 'Alley of Silence',
+    img: '/img/visuals/Alley_of_silence.jpeg',
+    type: '2D',
+    pembuat: 'Diva Edenia',
+    tanggal: '31 Mei 2023',
+    panjang: '21cm',
+    lebar: '14.8cm'
   }
 ]
