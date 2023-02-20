@@ -81,9 +81,9 @@ export const katalogList: KatalogProps[] = [
     type: '3D',
     pembuat: 'Muhammad Maula Khadavi',
     tanggal: '09 Oktober 2022',
-    panjang: '??',
-    lebar: '??',
-    tinggi: '??'
+    panjang: '20cm',
+    lebar: '12cm',
+    tinggi: '20cm'
   },
   {
     name: 'Sand of Life',
@@ -91,9 +91,9 @@ export const katalogList: KatalogProps[] = [
     type: '3D',
     pembuat: 'Muhammad Maula Khadavi',
     tanggal: '17 Maret 2021',
-    panjang: '??',
-    lebar: '??',
-    tinggi: '??'
+    panjang: '8cm',
+    lebar: '6cm',
+    tinggi: '30cm'
   },
   {
     name: 'Candy Girl',
