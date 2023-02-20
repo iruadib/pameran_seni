@@ -87,7 +87,7 @@ export const katalogList: KatalogProps[] = [
   },
   {
     name: 'Sand of Life',
-    img: '/img/visuals/Sand_of_life.jpeg',
+    img: '/img/visuals/Sand_of_Lifes.jpeg',
     type: '3D',
     pembuat: 'Muhammad Maula Khadavi',
     tanggal: '17 Maret 2021',
