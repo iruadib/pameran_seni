@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { routeList } from '../routeList'
+import { NoiseNav } from './Noise'
 import styles from './style.module.css'
 
 interface Props {
@@ -30,10 +31,7 @@ export const Nav = ({ open, handleClick }: Props) => {
         opened ? styles.opened : ''
       }`}
     >
-      {/* <div className={styles.bg}>
-        <div className={styles.noise}>
-        </div>
-      </div> */}
+      <NoiseNav opened={opened} show={show} />
       <div className={styles.cont}>
         <div className={styles.inner}>
           <ul className={styles.list}>
