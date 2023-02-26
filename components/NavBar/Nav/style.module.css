@@ -46,13 +46,7 @@
 }
 
 .list {
-  @apply block relative opacity-0;
-  transition: opacity 0s linear;
-}
-
-.opened .list {
-  @apply opacity-100;
-  animation: flash 0.1s steps(1) 1;
+  @apply block relative;
 }
 
 @media screen and (min-width: 961px) {
@@ -64,16 +58,36 @@
   }
 }
 
+.item {
+  @apply block relative opacity-0;
+  transition: opacity 0s linear;
+}
+
+.opened .item {
+  @apply opacity-100;
+  animation: flash 0.1s steps(1) 1;
+}
+
 @media screen and (max-width: 960px) {
   .item + .item {
     margin-top: 2rem;
   }
 }
 
-.item {
-  @apply block relative opacity-0;
-  opacity: 1;
-  transition: opacity 0s linear;
+.item:nth-child(1) {
+  transition-delay: 0s;
+}
+.item:nth-child(2) {
+  transition-delay: 0.05s;
+}
+.item:nth-child(3) {
+  transition-delay: 0.1s;
+}
+.item:nth-child(4) {
+  transition-delay: 0.15s;
+}
+.item:nth-child(5) {
+  transition-delay: 0.2s;
 }
 
 .opened .item:nth-child(1) {
@@ -89,6 +103,16 @@
 .opened .item:nth-child(3) {
   transition-delay: 0.4s;
   animation-delay: 0.4s;
+}
+
+.opened .item:nth-child(4) {
+  transition-delay: 0.45s;
+  animation-delay: 0.45s;
+}
+
+.opened .item:nth-child(5) {
+  transition-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .link {

@@ -16,12 +16,12 @@ export const Nav = ({ open, handleClick }: Props) => {
       setOpened(open)
       setTimeout(() => {
         setShow(open)
-      }, 100)
+      }, 300)
     } else {
       setShow(open)
       setTimeout(() => {
         setOpened(open)
-      }, 400)
+      }, 300)
     }
   }, [open])
   return (
