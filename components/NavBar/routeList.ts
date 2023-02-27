@@ -18,5 +18,9 @@ export const routeList = [
   {
     name: 'Poster',
     link: '/poster'
+  },
+  {
+    name: 'Buku Tamu',
+    link: '/bukutamu'
   }
 ]
