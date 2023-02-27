@@ -1,0 +1,7 @@
+.card {
+  @apply w-full h-auto block relative;
+}
+
+.iframe {
+  @apply max-w-full block mx-auto text-center;
+}
