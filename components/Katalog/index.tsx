@@ -138,6 +138,7 @@ export const Katalog = () => {
                       <img
                         src={item.img}
                         alt={item.name}
+                        loading="lazy"
                         className={styles.modal_img}
                       />
                     </motion.div>

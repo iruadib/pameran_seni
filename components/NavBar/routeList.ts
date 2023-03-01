@@ -22,5 +22,9 @@ export const routeList = [
   {
     name: 'Buku Tamu',
     link: '/bukutamu'
+  },
+  {
+    name: 'Kesan dan Pesan',
+    link: '/pesan'
   }
 ]

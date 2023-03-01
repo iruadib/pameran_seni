@@ -1,15 +1,15 @@
-import styles from './style.module.css'
 import { ContBg } from '../ContBg'
+import styles from './style.module.css'
 
-export const BukuTamu = () => {
+export const Pesan = () => {
   return (
     <>
-      <ContBg title="Buku Tamu">
+      <ContBg title="Buku Kesan dan Pesan">
         <p className={styles.head}>Isi langsung atau scan QR di bawah!</p>
         <div className={styles.card}>
           <div className={styles.cont}>
             <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSdBReoszg38wjxkx0-VkvbH8gS7ELZPoEJbNCUFla4n_pO5_w/viewform?embedded=true"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSe1qelLWOLgEAAsd1GvYJrfyo6y1RXdMV62opczIoguq3_yaw/viewform?embedded=true"
               width="640"
               height="792"
               frameBorder={0}
@@ -22,8 +22,8 @@ export const BukuTamu = () => {
             <div className={styles.img_cont}>
               <div className={styles.qr}>
                 <img
-                  src="/img/others/buku_tamu_qr.png"
-                  alt="Buku Tamu QR Code"
+                  src="/img/others/buku_kesan_pesan_qr.png"
+                  alt="Buku Kesan Pesan QR Code"
                   loading="lazy"
                   className={styles.img}
                 />
