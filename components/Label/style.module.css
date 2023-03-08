@@ -1,0 +1,8 @@
+.card {
+  @apply w-full h-auto block relative mx-auto;
+}
+
+.img {
+  max-height: 700px;
+  @apply mx-auto;
+}
