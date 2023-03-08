@@ -7,8 +7,7 @@ export const Poster = () => {
       <ContBg title="Poster">
         <div className={styles.card}>
           <img
-            // src="/img/poster.jpeg"
-            src="/img/poster (2).jpeg"
+            src="/img/poster.jpeg"
             alt="Poster Pameran Seni"
             className={styles.img}
             loading="lazy"

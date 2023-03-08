@@ -20,11 +20,15 @@ export const routeList = [
     link: '/poster'
   },
   {
+    name: 'Label',
+    link: '/label'
+  },
+  {
     name: 'Buku Tamu',
     link: '/bukutamu'
   },
   {
-    name: 'Kesan dan Pesan',
+    name: 'Kesan Pesan',
     link: '/pesan'
   }
 ]

@@ -18,12 +18,12 @@
 }
 
 .iframe {
-  @apply max-w-full w-3/4 block mx-auto text-center flex-grow;
+  @apply max-w-full w-3/4 block mx-auto text-center flex-grow pr-3;
 }
 
 @media screen and (max-width: 960px) {
   .iframe {
-    @apply w-full;
+    @apply w-full pr-0;
   }
 }
 
