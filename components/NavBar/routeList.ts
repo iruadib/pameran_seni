@@ -9,7 +9,7 @@ export const routeList = [
   },
   {
     name: 'Proposal',
-    link: '/proposal'
+    link: '/usul'
   },
   {
     name: 'Katalog',
