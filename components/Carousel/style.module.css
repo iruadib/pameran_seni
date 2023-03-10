@@ -4,7 +4,7 @@
 
 .cont {
   @apply w-full relative mx-auto bg-black;
-  padding-bottom: 18rem;
+  padding-bottom: 0rem;
 }
 
 .carousel {

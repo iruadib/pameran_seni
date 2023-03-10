@@ -18,7 +18,7 @@ export const Carousel = () => {
           // idx.current =
           //   idx.current! + 1 < children.length ? idx.current! + 1 : 0
           idx.current = idx.current === 0 ? 1 : 0
-          console.log(idx.current)
+          // console.log(idx.current)
           for (let i = 0; i < children.length; i++) {
             children.item(i)?.classList.remove(styles.current)
           }

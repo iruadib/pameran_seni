@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import { Carousel } from '@/components/Carousel'
+import { GlitchText } from '@/components/GlitchText'
 
 export default function Home() {
   return (
@@ -9,12 +10,7 @@ export default function Home() {
         <title>Halaman Rumah | The Melankolia</title>
       </Head>
       <Carousel />
-      {/* <img
-        src="/img/placeholder_bg.jpg"
-        alt="Placeholder"
-        className={styles.img}
-        loading="lazy"
-      /> */}
+      <GlitchText />
     </>
   )
 }
