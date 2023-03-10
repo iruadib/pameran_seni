@@ -13,10 +13,10 @@ export const NoiseNav = ({ opened, show }: Props) => {
       const duration = Math.random() * (40 - 4) + 4
       setTimeout(() => {
         setIsNoise(true)
-        console.log('sett')
+        // console.log('sett')
       }, duration * 100)
       setIsNoise(false)
-      console.log('unset')
+      // console.log('unset')
     }, 5000)
   }, [])
   return (

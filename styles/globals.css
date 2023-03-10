@@ -13,46 +13,6 @@
   --kv_pos_up: 50% 50%;
 }
 
-/* [data-chara='2b'] {
-  --kv_pos: 50% 33%;
-  --kv_pos_up: 50% 50%;
-}
-
-[data-chara='9s'] {
-  --kv_pos: 45% 36%;
-  --kv_pos_up: 50% 70%;
-}
-
-[data-chara='a2'] {
-  --kv_pos: 30% 20%;
-  --kv_pos_up: 30% 50%;
-}
-
-[data-chara='bunker'] {
-  --kv_pos: 54% 10%;
-  --kv_pos_up: 50% 58%;
-}
-
-[data-chara='pascal'] {
-  --kv_pos: 54% 60%;
-  --kv_pos_up: 50% 20%;
-}
-
-[data-chara='adam'] {
-  --kv_pos: 50% 50%;
-  --kv_pos_up: 50% 70%;
-}
-
-[data-chara='eve'] {
-  --kv_pos: 50% 50%;
-  --kv_pos_up: 50% 30%;
-}
-
-[data-chara='lily'] {
-  --kv_pos: 20% 50%;
-  --kv_pos_up: 50% 30%;
-} */
-
 @media screen and (max-width: 960px) {
   :root {
     --headerH: 3.5rem;
