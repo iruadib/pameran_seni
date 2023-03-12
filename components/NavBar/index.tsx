@@ -9,11 +9,14 @@ export const NavBar = () => {
   const [open, setOpen] = useState(false)
   useEffect(() => {
     setOpen(false)
+    document.querySelector('body')?.classList.remove('scroll-hide')
   }, [router.asPath])
   const handleClick = () => {
+    document.querySelector('body')?.classList.toggle('scroll-hide')
     setOpen((prev) => !prev)
   }
   const handleLinkClick = () => {
+    document.querySelector('body')?.classList.remove('scroll-hide')
     setOpen(false)
   }
   return (

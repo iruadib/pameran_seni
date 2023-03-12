@@ -58,7 +58,7 @@ export const katalogList: KatalogProps[] = [
     tinggi: '14cm'
   },
   {
-    name: 'Staryy Night',
+    name: 'Starry Night',
     img: '/img/visuals/Starry_night.jpeg',
     type: '2D',
     pembuat: 'Zahira Maulidina',

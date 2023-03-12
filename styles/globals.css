@@ -8,11 +8,6 @@
   --color-gray: #33322e;
 }
 
-:root {
-  --kv_pos: 50% 50%;
-  --kv_pos_up: 50% 50%;
-}
-
 @media screen and (max-width: 960px) {
   :root {
     --headerH: 3.5rem;

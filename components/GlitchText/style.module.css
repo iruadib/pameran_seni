@@ -17,47 +17,47 @@
   @apply absolute top-0 left-0;
 }
 
-.line:nth-child(1) {
+.is_noise .line:nth-child(1) {
   animation: clip 3000ms -300ms linear infinite,
     glitch 500ms -649ms linear infinite;
 }
 
-.line:nth-child(2) {
+.is_noise .line:nth-child(2) {
   animation: clip 3000ms -600ms linear infinite,
     glitch 500ms -321ms linear infinite;
 }
 
-.line:nth-child(3) {
+.is_noise .line:nth-child(3) {
   animation: clip 3000ms -900ms linear infinite,
     glitch 500ms -491ms linear infinite;
 }
 
-.line:nth-child(4) {
+.is_noise .line:nth-child(4) {
   animation: clip 3000ms -1200ms linear infinite,
     glitch 500ms -137ms linear infinite;
 }
 
-.line:nth-child(5) {
+.is_noise .line:nth-child(5) {
   animation: clip 3000ms -1500ms linear infinite,
     glitch 500ms -396ms linear infinite;
 }
 
-.line:nth-child(6) {
+.is_noise .line:nth-child(6) {
   animation: clip 3000ms -1800ms linear infinite,
     glitch 500ms -375ms linear infinite;
 }
 
-.line:nth-child(7) {
+.is_noise .line:nth-child(7) {
   animation: clip 3000ms -2100ms linear infinite,
     glitch 500ms -266ms linear infinite;
 }
 
-.line:nth-child(8) {
+.is_noise .line:nth-child(8) {
   animation: clip 3000ms -2400ms linear infinite,
     glitch 500ms -954ms linear infinite;
 }
 
-.line:nth-child(9) {
+.is_noise .line:nth-child(9) {
   animation: clip 3000ms -2700ms linear infinite,
     glitch 500ms -729ms linear infinite;
 }
