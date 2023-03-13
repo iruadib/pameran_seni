@@ -2,6 +2,10 @@
   @apply w-full h-auto block relative mx-auto;
 }
 
+.card + .card {
+  @apply mb-3;
+}
+
 .img {
   max-height: 700px;
   @apply mx-auto;

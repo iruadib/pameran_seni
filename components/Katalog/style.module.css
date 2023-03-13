@@ -602,6 +602,37 @@
   }
 }
 
+.qr_cont {
+  @apply mt-8 relative flex-grow w-full mx-auto;
+}
+
+@media screen and (max-width: 960px) {
+  .qr_cont {
+    @apply w-full mt-3;
+  }
+}
+
+.qr {
+  @apply bg-white block py-4;
+}
+
+@media screen and (max-width: 960px) {
+  .qr {
+    @apply py-2;
+  }
+}
+
+.qr_img {
+  @apply mx-auto w-full;
+  max-width: 150px;
+}
+
+@media screen and (max-width: 960px) {
+  .qr_img {
+    max-width: 100px;
+  }
+}
+
 /* ******************************* */
 
 @keyframes flash {

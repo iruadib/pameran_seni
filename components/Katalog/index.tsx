@@ -129,6 +129,16 @@ export const Katalog = () => {
               </motion.li>
             ))}
           </ul>
+          <div className={styles.qr_cont}>
+            <div className={styles.qr}>
+              <img
+                src="/img/others/katalog_qr.jpeg"
+                alt="Katalog QR Code"
+                loading="lazy"
+                className={styles.qr_img}
+              />
+            </div>
+          </div>
           <AnimatePresence>
             {selected && item && (
               <motion.div layoutId={selected} className={styles.modal}>
