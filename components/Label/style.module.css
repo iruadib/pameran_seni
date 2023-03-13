@@ -3,7 +3,7 @@
 }
 
 .card + .card {
-  @apply mb-3;
+  @apply mt-4;
 }
 
 .img {
