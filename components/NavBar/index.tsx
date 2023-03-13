@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import { Nav } from './Nav'
@@ -24,10 +25,12 @@ export const NavBar = () => {
       <header className={styles.header}>
         <div className={styles.cont}>
           <div className={styles.kelompok}>Kelompok Lima</div>
-          <div className={styles.heading}>
+          <Link href="/" className={styles.heading}>
             <h1 className={styles.nama}>The Melankolia</h1>
-            <sub className={styles.sub}>Melankolis ・ Kelompok Lima</sub>
-          </div>
+            <sub className={styles.sub}>
+              Melankolis<span className={styles.sub_lg}> ・ Kelompok Lima</span>
+            </sub>
+          </Link>
           <div className={styles.menu}>
             <div
               className={`${styles.inner} ${open ? styles.opened : ''}`}

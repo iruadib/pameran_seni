@@ -173,12 +173,12 @@
 }
 
 .data_item[data-visual='ma'] {
-  --kv_pos: 50% 33%;
+  --kv_pos: 50% 40%;
   --kv_pos_up: 50% 40%;
 }
 
 .data_item[data-visual='cd'] {
-  --kv_pos: 50% 33%;
+  --kv_pos: 50% 50%;
   --kv_pos_up: 50% 50%;
 }
 
@@ -188,12 +188,12 @@
 }
 
 .data_item[data-visual='sn'] {
-  --kv_pos: 40% 20%;
+  --kv_pos: 40% 50%;
   --kv_pos_up: 40% 50%;
 }
 
 .data_item[data-visual='cg'] {
-  --kv_pos: 50% 33%;
+  --kv_pos: 50% 40%;
   --kv_pos_up: 50% 40%;
 }
 
@@ -506,7 +506,8 @@
 }
 @media screen and (max-width: 960px) {
   ._slice .visual_source {
-    object-position: var(--kv_pos_up);
+    /* object-position: var(--kv_pos_up); */
+    object-position: var(--kv_pos);
   }
 }
 

@@ -39,6 +39,10 @@
   font-size: 0.65rem;
 }
 
+.sub_lg {
+  @apply hidden;
+}
+
 @media screen and (max-width: 960px) {
   .nama {
     @apply text-lg pb-0 mb-0;
@@ -48,6 +52,10 @@
 
   .sub {
     font-size: 0.45rem;
+  }
+
+  .sub_lg {
+    @apply inline-block;
   }
 }
 
