@@ -96,9 +96,19 @@ export const katalogList: KatalogProps[] = [
     lebar: '12cm',
     tinggi: '20cm'
   },
+  // {
+  //   name: 'Smiley Face',
+  //   img: '/img/visuals/Smiley_face.jpeg',
+  //   type: '3D',
+  //   pembuat: 'Windari Brilliani',
+  //   tanggal: '10 Mei 2022',
+  //   panjang: '28cm',
+  //   lebar: '22cm',
+  //   tinggi: '14cm'
+  // },
   {
     name: 'Smiley Face',
-    img: '/img/visuals/Smiley_face.jpeg',
+    img: '/img/visuals/Smiley_face_t1.jpeg',
     type: '3D',
     pembuat: 'Windari Brilliani',
     tanggal: '10 Mei 2022',
