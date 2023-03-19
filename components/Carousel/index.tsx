@@ -51,16 +51,12 @@ export const Carousel = () => {
               >
                 <ul className={styles.list} ref={listRef}>
                   <li className={`${styles.item} ${styles.current}`}>
-                    <div className={styles.data}>
+                    <Link href="/katalog" className={styles.data}>
                       <div className={styles.data_cursor}>
                         <div className={styles.cursor_deco}></div>
                       </div>
                       <div className={styles.data_list}>
-                        <Link
-                          href="/katalog"
-                          className={styles.data_item}
-                          data-visual="ma"
-                        >
+                        <div className={styles.data_item} data-visual="ma">
                           <div
                             className={`${styles.data_visual} ${styles._img1}`}
                           >
@@ -94,9 +90,9 @@ export const Carousel = () => {
                               />
                             </figure>
                           </div>
-                        </Link>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   </li>
                   <li className={`${styles.item}`}>
                     <div className={`${styles.data} ${styles._slice}`}>
@@ -177,16 +173,12 @@ export const Carousel = () => {
                     </div>
                   </li>
                   <li className={`${styles.item} `}>
-                    <div className={styles.data}>
+                    <Link href="/katalog" className={styles.data}>
                       <div className={styles.data_cursor}>
                         <div className={styles.cursor_deco}></div>
                       </div>
                       <div className={styles.data_list}>
-                        <Link
-                          href="/katalog"
-                          className={styles.data_item}
-                          data-visual="cg"
-                        >
+                        <div className={styles.data_item} data-visual="cg">
                           <div
                             className={`${styles.data_visual} ${styles._img1}`}
                           >
@@ -220,9 +212,9 @@ export const Carousel = () => {
                               />
                             </figure>
                           </div>
-                        </Link>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   </li>
                   <li className={`${styles.item}`}>
                     <div className={`${styles.data} ${styles._slice}`}>

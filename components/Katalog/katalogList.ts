@@ -95,6 +95,16 @@ export const katalogList: KatalogProps[] = [
   //   tinggi: '20cm'
   // },
   {
+    name: 'Memorable Triangle',
+    img: '/img/visuals/Memorable Triangle.jpeg',
+    type: '3D',
+    pembuat: 'Nayla Atha',
+    tanggal: '16 Agustus 2022',
+    panjang: '11.5cm',
+    lebar: '11.5cm',
+    tinggi: '17cm'
+  },
+  {
     name: 'Beautiful Chopstick',
     img: '/img/visuals/Beautiful_chopstick_t1.jpeg',
     type: '3D',
