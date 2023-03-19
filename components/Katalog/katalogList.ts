@@ -30,6 +30,15 @@ export const katalogList: KatalogProps[] = [
     lebar: '29.7cm'
   },
   {
+    name: 'Light Scyphozoa',
+    img: '/img/visuals/Light Scyphozoa.jpeg',
+    type: '2D',
+    pembuat: 'Nayla Atha',
+    tanggal: '12 Agustus 2022',
+    panjang: '29.7cm',
+    lebar: '42cm'
+  },
+  {
     name: 'Alley of Silence',
     img: '/img/visuals/Alley_of_silence.jpeg',
     type: '2D',
@@ -38,7 +47,6 @@ export const katalogList: KatalogProps[] = [
     panjang: '21cm',
     lebar: '14.8cm'
   },
-
   {
     name: 'Chilling',
     img: '/img/visuals/Chill Girl.jpeg',
