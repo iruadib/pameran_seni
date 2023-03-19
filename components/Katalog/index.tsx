@@ -132,7 +132,7 @@ export const Katalog = () => {
           <div className={styles.qr_cont}>
             <div className={styles.qr}>
               <img
-                src="/img/others/katalog_qr.jpeg"
+                src="/img/others/katalog_qr_2.png"
                 alt="Katalog QR Code"
                 loading="lazy"
                 className={styles.qr_img}
