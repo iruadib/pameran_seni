@@ -6,10 +6,10 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body>
-        <Script
+        {/* <Script
           src="//embed.typeform.com/next/embed.js"
           strategy="lazyOnload"
-        />
+        /> */}
         <Main />
         <NextScript />
       </body>

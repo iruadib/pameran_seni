@@ -235,6 +235,11 @@
   dependencies:
     tslib "^2.4.0"
 
+"@typeform/embed@^2.9.2":
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-2.9.2.tgz#2f5a937bf736e4c66a77bb7fb9dd4bb102d47afa"
+  integrity sha512-aCOUXPAwHo6/3AJNl+6aXqkvB+E5V+DqWae4KUYXd27HrqMomUdsp7jK+yGF7RiFP+PfNmWpi9OiKQUC2SBa8g==
+
 "@types/json5@^0.0.29":
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"

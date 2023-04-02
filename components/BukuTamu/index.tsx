@@ -1,22 +1,23 @@
 import styles from './style.module.css'
+import { createWidget } from '@typeform/embed'
+import '@typeform/embed/build/css/widget.css'
 import { ContBg } from '../ContBg'
+import { useEffect, useRef } from 'react'
 
 export const BukuTamu = () => {
+  const container = useRef<null | HTMLDivElement>(null)
+  useEffect(() => {
+    if (container.current) {
+      createWidget('rpvYfdP8', { container: container.current })
+    }
+  }, [])
   return (
     <>
       <ContBg title="Buku Tamu">
         <p className={styles.head}>Isi langsung atau scan QR di bawah!</p>
         <div className={styles.card}>
           <div className={styles.cont}>
-            <div
-              data-tf-widget="rpvYfdP8"
-              data-tf-opacity="100"
-              data-tf-hide-headers
-              data-tf-iframe-props="title=Buku Tamu"
-              data-tf-transitive-search-params
-              data-tf-medium="snippet"
-              style={{ width: '100%', height: '500px' }}
-            ></div>
+            <div ref={container} className={styles.form}></div>
             {/* <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLSdBReoszg38wjxkx0-VkvbH8gS7ELZPoEJbNCUFla4n_pO5_w/viewform?embedded=true"
               width="640"
