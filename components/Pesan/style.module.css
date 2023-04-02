@@ -28,7 +28,7 @@
 }
 
 .img_cont {
-  @apply relative flex-grow w-1/4 mx-auto;
+  @apply relative flex-grow w-full mx-auto mt-5;
 }
 
 @media screen and (max-width: 960px) {
@@ -38,16 +38,22 @@
 }
 
 .qr {
-  @apply bg-white block;
+  @apply relative bg-gray-50 block h-40;
+}
+
+@media screen and (max-width: 960px) {
+  .qr {
+    @apply h-24;
+  }
 }
 
 .img {
-  @apply mx-auto w-full;
+  @apply mx-auto w-full h-full object-contain;
   max-width: 300px;
 }
 
 @media screen and (max-width: 960px) {
   .img {
-    max-width: 150px;
+    max-width: 125px;
   }
 }
