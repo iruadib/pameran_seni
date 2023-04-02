@@ -8,7 +8,6 @@ export default function BukuTamuPage() {
       <Head>
         <title>Halaman Kesan dan Pesan | The Melankolia</title>
       </Head>
-      <Script src="//embed.typeform.com/next/embed.js" />
       <Pesan />
     </>
   )
